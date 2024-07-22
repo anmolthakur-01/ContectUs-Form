@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgb(205, 253, 237);
+    background-color: #F8EDED;
     display: grid;   /* To align the outer div in the .center-container of the body */
     justify-content: center;
     align-items: center;
