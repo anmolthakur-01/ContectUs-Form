@@ -33,7 +33,7 @@ body{
     flex-direction: column;   /* To add the elements into column */
     justify-content: space-between;   /* For adding the space between the .phone-no .email .address div */
     padding: 30px;
-    border-right: 1.5px solid black;  /* Use for add vertical line between the two .contect-info and .main-content divs */
+    border-left: 1.5px solid #999;  /* Use for add vertical line between the two .contect-info and .main-content divs */
 }
 
 .contect-info .address{
@@ -81,7 +81,7 @@ body{
 .input2{
     margin: 5px 0;
     padding: 7px;
-    width: 100%;
+    width: 100% ;
     border: none;
     background-color: #EEEDEB;
 }
@@ -104,3 +104,73 @@ body{
     height: 30px;
     width: 80px;
 }
+
+
+/* Media query use to make website responsive */
+
+@media screen and (max-width:600px) {
+    body{
+        background-image: linear-gradient(#db9f9f, #F8EDED);
+        display: grid;   
+        justify-content: center;
+        align-items: center;
+    }
+    .outer-container{
+        background-color: white;
+        margin: 50px;
+        border: none;
+        width: 85vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .contect-info{
+        text-align: center;
+        display: grid;
+        row-gap: 10px;
+        justify-content: center;
+        border-top: 1.5px solid #999;
+        border-left: none;
+    } 
+    .header h2{
+        margin-bottom: 10px;
+    }
+    .main-content .input{
+        margin: 10px 0;
+    }
+    .main-content .submit-btn{
+        margin-top:10px;
+    }
+}
+
+@media screen and (max-width:950px) and (min-width:600px){
+    body{
+        background-color: #F8EDED;
+        display: grid;   
+        justify-content: center;
+        align-items: center;   
+    }
+    .outer-container{
+        background-color: white;
+        margin: 70px;
+        border: none;
+        border-radius: 7px;
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .contect-info{
+        border-left: none;
+        border-top: 1.5px solid #999;
+        flex-direction: row;       
+        justify-content: space-between;
+    }
+    .main-content .header h2{
+        margin-bottom: 10px;
+    }
+    .main-content .input{
+        margin: 10px 0;
+    }
+    .main-content .submit-btn{
+        margin-top:10px;
+    }
+}    
