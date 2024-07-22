@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(205, 253, 237);
+    display: grid;   /* To align the outer div in the .center-container of the body */
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-container{
+    background-color: white;
+    margin: 150px;
+    border: none;
+    border-radius: 7px;
+    width: 60vw;
+    display: grid;
+    grid-template-areas: 'contect-info inner-content';   /* To adjust the content side by side */
+    grid-auto-flow: column;
+}
+
+
+/* Bellow content is left side of the vertical line */
+
+.contect-info{
+    display: flex;   /* To use the flex properties */
+    text-align: center;
+    align-items: center;   /* To adjust the elments in center horizontly */
+    flex-direction: column;   /* To add the elements into column */
+    justify-content: space-between;   /* For adding the space between the .phone-no .email .address div */
+    padding: 30px;
+    border-right: 1.5px solid black;  /* Use for add vertical line between the two .contect-info and .main-content divs */
+}
+
+.contect-info .address{
+    display: grid;   /* Use to add the gap between the <i>, <h4>, <p> tags */
+    row-gap: 5px;
+}
+.contect-info .phone-no{
+    display: grid;   /* Use to add the gap between the <i>, <h4>, <p> tags */
+    row-gap: 5px;
+}
+.contect-info .email{
+    display: grid;   /* Use to add the gap between the <i>, <h4>, <p> tags */
+    row-gap: 5px;
+}
+
+.contect-info p{
+    opacity: .4;   /*To create a lighter text */
+    font-size: 14px;
+}
+
+
+/* Bellow content is right side of the vertical line  */
+
+.main-content{
+    padding: 30px;
+}
+
+.header h2{
+    color: #102C57;
+}
+
+.input{
+    grid-template-columns: auto;   /* Use for responsive input box, it shrink along with display size, if display size getting decreased it automaticaly adjust*/
+}
+
+/* Bellow is simple css styling for the inputs and submit-btn */
+.input1{
+    margin: 5px 0;
+    padding: 7px;
+    width: 100%;
+    border: none;
+    background-color: #EEEDEB;
+}
+
+.input2{
+    margin: 5px 0;
+    padding: 7px;
+    width: 100%;
+    border: none;
+    background-color: #EEEDEB;
+}
+
+.input3{
+    margin: 5px 0;
+    padding: 7px;
+    width: 100%;
+    height: 64px;
+    border: none;
+    background-color: #EEEDEB;
+}
+
+.submit-btn{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #102C57;
+    color: white;
+    height: 30px;
+    width: 80px;
+}
